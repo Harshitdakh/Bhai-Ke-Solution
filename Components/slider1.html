@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        Slider styles
+        .slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .slider label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .slider input[type="radio"] {
+            display: none;
+        }
+
+        .slider input[type="radio"]+span {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .slider input[type="radio"]:checked+span {
+            background-color: #4CAF50;
+            color: #fff; }
+
+    </style>
+</head>
+<body>
+
+    <h1>First One </h1>
+    <div class="slider">
+        <label for="option1">Option 1</label>
+        <input type="radio" id="option1" name="slider" value="option1">
+        <span>Option 1</span>
+
+        <label for="option2">Option 2</label>
+        <input type="radio" id="option2" name="slider" value="option2">
+        <span>Option 2</span>
+    </div> 
+
+    
+</body>
+</html>
