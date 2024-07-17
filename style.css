@@ -27,6 +27,7 @@ nav {
 }
 
 .logo img {
+    margin-right: auto;
     height: 50px;
 }
 
@@ -37,8 +38,26 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
-    margin-left: 20px;
+nav ul.left {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 20px; /* Added gap between logo and navigation items */
+}
+
+nav ul.right {
+    display: flex;
+}
+
+nav ul.left li, nav ul.right li {
+    margin-left: 40px; /* Increase gap between Home, Study Material, About, and Contact */
+}
+
+nav ul.right li.signup {
+    margin-left: 50px; /* Further increase gap between Login and Sign up */
+}
+
+nav ul li:first-child {
+    /* margin-left: ; */
 }
 
 nav ul li a {
@@ -83,8 +102,13 @@ nav ul li a.login, nav ul li a.signup {
         align-items: flex-start;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    nav ul.left, nav ul.right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul.left li, nav ul.right li {
+        margin-left: 30;
     }
 
     .hero h1 {
@@ -95,4 +119,7 @@ nav ul li a.login, nav ul li a.signup {
         font-size: 1.2em;
     }
 }
+
+
+
 
