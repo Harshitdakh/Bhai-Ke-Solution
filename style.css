@@ -22,9 +22,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 0px;
+    /* max-width: 1200px; */
+    margin: 0px 22px;
+    padding: 0 20px;
 }
 
 .logo img {
@@ -57,7 +57,7 @@ nav ul.left li, nav ul.right li {
 }
 
 nav ul.right li.signup {
-    margin-left: 50px; /* Further increase gap between Login and Sign up */
+    margin-left: 20px; /* Further increase gap between Login and Sign up */
 }
 
 nav ul li:first-child {
