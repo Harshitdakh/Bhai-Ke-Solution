@@ -18,15 +18,17 @@ header {
 }
 
 nav {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 0px;
 }
 
 .logo img {
+    
     margin-right: auto;
     height: 50px;
 }
@@ -39,9 +41,11 @@ nav ul {
 }
 
 nav ul.left {
+    left: 0px;
+    position:relative;
     display: flex;
     flex-grow: 1;
-    margin-left: 20px; /* Added gap between logo and navigation items */
+    /* margin-left: 20px; Added gap between logo and navigation items */
 }
 
 nav ul.right {
