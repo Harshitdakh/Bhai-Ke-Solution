@@ -204,3 +204,8 @@ nav ul li a.signup {
 .flex {
     display: flex;
 }
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
