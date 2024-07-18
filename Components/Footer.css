@@ -12,12 +12,12 @@ body {
 
 .footer {
     margin-top: 150px;
-    background: linear-gradient(130deg, rgba(83, 77, 77, 0.1), rgba(75, 70, 70, 0.267));
+    background: linear-gradient(130deg,rgba(83, 77, 77, 0.1),rgba(75, 70, 70, 0.267)); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
 
     /* background-color: #181818; */
-    padding: 0px 20px;
+    padding:    0px 20px;
     color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -146,12 +146,9 @@ body {
     .footer {
         text-align: center;
     }
-
-    .footer-left,
-    .footer-right {
+    .footer-left, .footer-right {
         max-width: 100%;
     }
-
     .footer-right {
         flex-direction: column;
     }
