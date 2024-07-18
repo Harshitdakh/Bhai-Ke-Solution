@@ -22,6 +22,7 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     border-radius: 99px;
     padding: 0.75rem;
+    
 }
 
 .tabs {
@@ -36,7 +37,7 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 54px;
+    height: 60px;
     width: 200px;
     font-size: 1.25rem;
     font-weight: 400;
@@ -44,6 +45,7 @@ input[type="radio"] {
     cursor: pointer;
     transition: color 0.15s ease-in;
     color: black;
+    z-index: 4;
 
 }
 
@@ -64,14 +66,18 @@ input[id="radio-2"]:checked ~ .glider {
 .glider {
     display: flex;
     position: absolute;
-    height: 54px;
+    height: 60px;
     width: 200px;
+    background-color: white;
     background-color: #663dff;
     background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
     color: white ;
     z-index: 1;
     border-radius: 99px;
     transition: 0.25s ease-out;
+}
+.tab:hover{
+    background-color: transparent ;
 }
 
 @media (max-width: 768px) {
