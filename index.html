@@ -19,20 +19,35 @@
     <script src="Components/Mouse_trail.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        *{
+
+        * {
             font-family: "poppins";
         }
-        </style>
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true ,
+            distance : '100px',
+            duration:2500,
+            delay: 400
+         });
+
+        // ScrollReveal({})
+ 
+
+    </script>
+
 </head>
 
 <body>
-    <header>
+
+    <header class="scrollt">
         <nav>
             <div class="logo">
-<a href="index.html">
+                <a href="index.html">
 
-    <img src="Components/Assets/img/logo nobg.png" alt="Bhai Ke Solutions Logo">
-</a>
+                    <img src="Components/Assets/img/logo nobg.png" alt="Bhai Ke Solutions Logo">
+                </a>
             </div>
             <ul class="left">
                 <li><a href="index.html">Home</a></li>
@@ -48,24 +63,24 @@
     </header>
     <div id="blob">
         <div class="blur"></div>
-    
+
     </div>
     <section class="hero">
-        <h1 class="poppins-bold">Bhai Ke Solutions</h1>
-        <p>Welcome to Bhai Ke Solutions! Discover endless opportunities to learn, grow, and thrive with us. Let's start
+        <h1 class="poppins-bold scrollt">Bhai Ke Solutions</h1>
+        <p class="scrollb">Welcome to Bhai Ke Solutions! Discover endless opportunities to learn, grow, and thrive with us. Let's start
             your educational journey together!!!</p>
     </section>
-    <div class="vid_container">
+    <div class="vid_container scrollb">
         <div class="blur-background"></div>
         <video class="video" width="100%" src="Components/Assets/Video/vid2.webm" loop autoplay muted></video>
         <!-- <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/m9coOXt5nuw?si=ntfK5et4S6wVsmep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-      </div>
-   
+    </div>
 
-    <div class="heading">
+
+    <div class="heading scrollt">
         Lets Get Started ......
     </div>
-    <div class="container1">
+    <div class="container1 scrollr">
         <div class="tabs">
             <input type="radio" id="radio-1" name="tabs" checked>
             <label class="tab" for="radio-1">Grade IX</label>
@@ -77,38 +92,38 @@
         </div>
     </div>
 
-    <div class="cards">
-        <div class="card">
+    <div class="cards scroll3">
+        <div class="card scrolll">
             <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>English</h3>
             <p></p>
         </div>
-        <div class="card">
+        <div class="card scrollt">
             <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>Maths</h3>
             <p></p>
         </div>
-        <div class="card">
+        <div class="card scrollb">
             <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>Science</h3>
             <p></p>
         </div>
-        <div class="card">
+        <div class="card scrollt">
             <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>Social science</h3>
             <p></p>
         </div>
-        <div class="card">
+        <div class="card scrollr">
             <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>Hindi</h3>
             <p></p>
         </div>
-        
+
     </div>
-    <div class="heading">
+    <div class="heading scrollt">
         Reveal the Dark contents
     </div>
-    <div class="list">
+    <div class="list scrollb">
         <div class="item">
             <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
         </div>
@@ -139,12 +154,12 @@
         <div class="item">
             <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
         </div> -->
-    
+
     </div>
-    
+
 </body>
 
-<footer class="footer">
+<footer class="footer scrollb">
     <div class="container">
         <div class="footer-left">
             <span class="flex">
@@ -155,10 +170,14 @@
             <p class="footer-tagline">Knowledge of Excellence</p>
             <div class="social-icons">
                 <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/meta.svg" alt="Meta"></a>
-                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/twitter.svg" alt="Twitter"></a>
-                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/linkedin.svg" alt="LinkedIn"></a>
-                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/instagram.svg" alt="Instagram"></a>
-                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/telegram.svg" alt="Telegram"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/twitter.svg"
+                        alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/linkedin.svg"
+                        alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/instagram.svg"
+                        alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/telegram.svg"
+                        alt="Telegram"></a>
             </div>
             <form class="newsletter-form">
                 <input type="email" placeholder="type your Email Address" required>
@@ -197,4 +216,12 @@
         <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
     </div>
 </footer>
+<script>
+    
+ScrollReveal().reveal(".scrollr",{delay:200 ,origin: 'right'});
+ScrollReveal().reveal(".scrollb",{delay:200 ,origin: 'bottom'});
+ScrollReveal().reveal(".scrollt",{delay:200 ,origin: 'top'});
+ScrollReveal().reveal(".scrolll",{delay:200 ,origin: 'left'});
+ScrollReveal().reveal(".scroll3",{delay:500 ,origin: 'bottom', interval: 200});
+</script>
 </html>
