@@ -1,0 +1,47 @@
+
+body {
+    background-color: black !important;
+}
+
+#blob {
+    position: fixed; /* Change to fixed */
+    background-color: white !important;
+    height: 300px;
+    aspect-ratio: 1;
+    top: 0; /* Set initial position */
+    left: 0; /* Set initial position */
+    transform: translate(-50%, -50%); /* Center the blob */
+    /* Make the blob not interact with mouse events */
+    pointer-events: all; 
+    border-radius: 50%;
+
+    background-image: linear-gradient(135deg, #924bc9 0%, #e430a8 74%);;
+    /* background: linear-gradient(
+        to right ,
+        #c505ffd8,
+        rgba(4, 27, 238, 0.76)
+    ); */
+    animation: rotate 6s infinite;
+    filter: blur(200px);
+    z-index: -2;
+}
+
+@keyframes rotate{
+    from{
+        rotate: 0deg;
+    }
+    50% { 
+        scale: 0.5;
+    }
+    to{
+        rotate: 360deg;
+    }
+    
+}
+.blur{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    backdrop-filter: blur(400px);
+}

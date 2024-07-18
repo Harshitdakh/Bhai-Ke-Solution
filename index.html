@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Components/cards.css">
     <link rel="stylesheet" href="Components/slider.css">
+    <link rel="stylesheet" href="Components/infinite_cards.css">
+    <link rel="stylesheet" href="Components/Footer.css  ">
+    <link rel="stylesheet" href="Components/Mouse_trail.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">     -->
 
     <script src="script.js"></script>
+    <script src="Components/Mouse_trail.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         *{
@@ -27,7 +31,7 @@
             <div class="logo">
 <a href="index.html">
 
-    <img src="Assets/img/logo nobg.png" alt="Bhai Ke Solutions Logo">
+    <img src="Components/Assets/img/logo nobg.png" alt="Bhai Ke Solutions Logo">
 </a>
             </div>
             <ul class="left">
@@ -42,14 +46,19 @@
             </ul>
         </nav>
     </header>
+    <div id="blob">
+        <div class="blur"></div>
+    
+    </div>
     <section class="hero">
         <h1 class="poppins-bold">Bhai Ke Solutions</h1>
         <p>Welcome to Bhai Ke Solutions! Discover endless opportunities to learn, grow, and thrive with us. Let's start
             your educational journey together!!!</p>
     </section>
-    <div class="container">
+    <div class="vid_container">
         <div class="blur-background"></div>
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/m9coOXt5nuw?si=ntfK5et4S6wVsmep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video class="video" width="100%" src="Components/Assets/Video/vid2.webm" loop autoplay muted></video>
+        <!-- <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/m9coOXt5nuw?si=ntfK5et4S6wVsmep" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
       </div>
    
 
@@ -70,32 +79,122 @@
 
     <div class="cards">
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Placeholder">
+            <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>English</h3>
             <p></p>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Placeholder">
+            <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>Maths</h3>
             <p></p>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Placeholder">
+            <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>Science</h3>
             <p></p>
         </div>
-        <div class="card social "  >
-            <img src="https://via.placeholder.com/150" alt="Placeholder">
-            <h3 class="social">Social Science</h3>
+        <div class="card">
+            <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
+            <h3>Social science</h3>
             <p></p>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/150" alt="Placeholder">
+            <!-- <img src="https://via.placeholder.com/150" alt="Placeholder"> -->
             <h3>Hindi</h3>
             <p></p>
         </div>
         
     </div>
+    <div class="heading">
+        Reveal the Dark contents
+    </div>
+    <div class="list">
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <!-- <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div>
+        <div class="item">
+            <img height="300px" width="200px" src="Components/Assets/img/infinite/8.jpg" alt="">
+        </div> -->
+    
+    </div>
+    
 </body>
 
+<footer class="footer">
+    <div class="container">
+        <div class="footer-left">
+            <span class="flex">
+                <img src="Components\Assets\img\logo nobg.png" alt="BKS Logo" class="footer-logo">
+
+                <p class="footer-text">for students</p>
+            </span>
+            <p class="footer-tagline">Knowledge of Excellence</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/meta.svg" alt="Meta"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/twitter.svg" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/instagram.svg" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="Components/Assets/img/Social media/telegram.svg" alt="Telegram"></a>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="type your Email Address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="footer-right">
+            <div class="footer-section">
+                <h3>Classes</h3>
+                <ul>
+                    <li><a href="#">Class IX</a></li>
+                    <li><a href="#">Class X</a></li>
+                    <li><a href="#">Class XI</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Study Material</h3>
+                <ul>
+                    <li><a href="#">All in one</a></li>
+                    <li><a href="#">NCERT Solutions</a></li>
+                    <li><a href="#">Secret Books</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Docs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Bhai ke Solution, Inc. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a>
+    </div>
+</footer>
 </html>
