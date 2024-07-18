@@ -6,10 +6,12 @@
     /* justify-items: center; */
     align-items: center;
     background-color: #3e187a;
-background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
-    height: 650px;
+    /* background-color: #a4508b; */
+
+    background-image: linear-gradient(135deg, #350659 0%, #211529 74%);
+        height: 650px;
     width: 70vw;
-    margin: auto;
+    margin: 100px auto;
     gap: 20px;
     flex-wrap: wrap;
     border-radius: 30px;
@@ -27,10 +29,14 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
     text-align: center;
     /* background-color: white; */
     background-color: #663dff;
-    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+    background-image: linear-gradient(135deg, #3f0a7c 0%, #7a0faf 37%, #c880df 100%);
 
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(255, 254, 254, 0.5);
+    box-shadow: 0px 1px 38px 6px rgba(90, 2, 131, 0.87);
+    border: 2px solid purple;
+    border-image: linear-gradient(135deg, #7a0faf 37%, #f4f3f5 100%);
+    ;
+
 }
 
 .card img{
@@ -43,10 +49,16 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
     margin: 15px 55px 15px 0px;
 }
 
+
+.card h3.social{
+    font-size: 20px;
+    gap: 10px;
+
+}
 .card h3 {
     display: inline-block;
   vertical-align: middle;
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-left: 20px;
   /* margin-top: 50px; */
   font-size: 35px;
