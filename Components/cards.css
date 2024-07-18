@@ -7,8 +7,8 @@
     align-items: center;
     background-color: #3e187a;
 background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
-    height: auto;
-    width: 80vw;
+    height: 650px;
+    width: 70vw;
     margin: auto;
     gap: 20px;
     flex-wrap: wrap;
@@ -18,8 +18,8 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
 
 .card {
     
-    height: 300px;
-    width: 200px;
+    height: 120px;
+    width: 300px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,26 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
     background-color: #663dff;
     background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
 
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(255, 254, 254, 0.5);
+}
+
+.card img{
+    display: inline-block;
+    vertical-align: middle;
+    /* width: 70px; */
+    height: 70px;
+    /* margin-right: 20px; */
+    /* margin-top: 15px; */
+    margin: 15px 55px 15px 0px;
+}
+
+.card h3 {
+    display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-left: 20px;
+  /* margin-top: 50px; */
+  font-size: 35px;
+  font-weight: 400;
 }
