@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <h2>Register with your e-mail</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="username">USERNAME</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="text" id="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="repeat_password">REPEAT PASSWORD (for confirmation)</label>
+                <input type="password" id="repeat_password" name="repeat_password" placeholder="Repeat Password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember_me" name="remember_me">
+                <label for="remember_me">Awwwards may keep me informed with personalized emails about products and services. See our Privacy Policy for more details.</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="contact_email" name="contact_email">
+                <label for="contact_email">Please contact me via e-mail</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I have read and accept the Terms and Conditions</label>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Or register with</p>
+        <div class="social-login">
+            <a href="#"><i class="fab fa-google"></i> Google</a>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+        <p>Are you a member? <a href="#">Log in now</a></p>
+    </div>
+</body>
+</html>
