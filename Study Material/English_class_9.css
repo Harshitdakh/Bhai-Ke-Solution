@@ -406,3 +406,183 @@ body {
     /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
     box-shadow: rgba(186, 107, 231, 0.56) 0px 22px 70px 4px;
 }
+.chapter_heading{
+    
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    margin-left: 60px;
+    /* margin-right: auto; */
+    /* margin-top: 60px; */
+    margin-bottom: 60px;
+    font-weight: bold;
+    margin-top: 50px;
+
+}
+.content {
+    height: auto;
+    width: 95vw;
+    border: 2px solid black;
+    margin: 50px;
+    border-radius: 10px;
+    /* background-color: #00000085;
+         */
+         /* background: linear-gradient(130deg,rgba(255, 255, 255, 0.1),rgba(231, 141, 231, 0.267));  */
+         /* backdrop-filter: blur(10px); */
+         /* -webkit-backdrop-filter: blur(5px); */
+         border-radius: 20px;
+         box-shadow: rgba(164, 47, 231, 0.56) 0px 22px 70px 4px;
+         /* background: url(../Components/Assets/mountains.jpg); */
+         background-size: cover;
+}
+    
+.flex{
+    display: flex;
+}
+.chapter_bars{
+    justify-content: center;
+    margin: auto;
+}
+.chapter_bar{
+    width: 50px;
+    height: 2px;
+    background-color: #212121;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.para{
+    /* display: block;z */
+    display: flex;
+width: 50%;
+    color: white;
+        margin-left: 60px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: left;
+    font-size: 30px;
+    text-align: left;
+}
+.content .que{
+    /* display: block; */
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.chapter_bar{
+    font-size: 30px;
+    display: flex;
+    color: #f3f3f3;
+    text-decoration: none;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    height: 260px;
+    background-color: #d197e2;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    border-radius: 10px;
+    justify-content: center;
+    /* margin: auto; */
+    background-image: linear-gradient(319deg, #201e1e 0%, #77313d 37%, #b21a1a 100%);
+
+    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.chapter_bar:hover{
+    box-shadow: rgba(233, 127, 127, 0.35) 0px 5px 15px;
+    transform: scale(1.15);
+}
+
+.chapter_content_bars{
+    margin-top: 100px;
+}
+
+.chapter_content_bar{
+    font-size: 20px;
+
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    min-width: 150px;
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #d197e2;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    border-radius: 30px;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 50px;
+    /* margin: auto; */
+    background-image: linear-gradient(319deg, #8011a1 0%, #36056e 37%, #2e0886 100%);
+
+    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+
+.chapter_content_bar:hover{
+    
+    box-shadow: rgb(70, 4, 90) 0px 5px 15px;
+    transform: scale(1.15);
+
+}
+
+body {
+    background-color: black !important;
+}
+
+#blob {
+    position: fixed; /* Change to fixed */
+    background-color: white !important;
+    height: 300px;
+    aspect-ratio: 1;
+    top: 0; /* Set initial position */
+    left: 0; /* Set initial position */
+    transform: translate(-50%, -50%); /* Center the blob */
+    /* Make the blob not interact with mouse events */
+    pointer-events: all; 
+    border-radius: 50%;
+
+    background-image: linear-gradient(135deg, #924bc9 0%, #e430a8 74%);;
+    /* background: linear-gradient(
+        to right ,
+        #c505ffd8,
+        rgba(4, 27, 238, 0.76)
+    ); */
+    animation: rotate 6s infinite;
+    filter: blur(200px);
+    z-index: -2;
+}
+
+@keyframes rotate{
+    from{
+        rotate: 0deg;
+    }
+    50% { 
+        scale: 0.5;
+    }
+    to{
+        rotate: 360deg;
+    }
+    
+}
+.blur{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    backdrop-filter: blur(400px);
+}
