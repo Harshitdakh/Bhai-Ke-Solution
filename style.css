@@ -19,7 +19,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 
@@ -204,4 +204,9 @@ nav ul li a.signup {
 
 .flex {
     display: flex;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
 }
