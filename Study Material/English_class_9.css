@@ -454,9 +454,22 @@ body {
 .para{
     /* display: block;z */
     display: flex;
-width: 50%;
+
     color: white;
-        margin-left: 60px;
+        margin-left: 20px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: left;
+    font-size: 30px;
+    text-align: left;
+}
+.ans{
+    /* display: block;z */
+    display: flex;
+    width: 50%;
+    color: white;
+    margin-left: 60px;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
