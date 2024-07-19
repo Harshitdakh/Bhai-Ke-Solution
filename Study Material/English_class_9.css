@@ -599,3 +599,8 @@ body {
     z-index: -1;
     backdrop-filter: blur(400px);
 }
+
+.content span {
+    font-size: 40px;
+    
+}
