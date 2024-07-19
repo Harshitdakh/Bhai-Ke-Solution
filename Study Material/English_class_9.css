@@ -11,8 +11,6 @@ body {
 
 }
 
-
-
 /* Header Styles */
 header {
     background-color: #0f051b00;
@@ -193,17 +191,25 @@ nav ul li a.signup {
 .heading {
     font-size: 50px;
     color: white;
-    background-image: url(Components/Assets/img/img.png);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     /* margin-top: 60px; */
     margin-bottom: 60px;
     font-weight: bold;
-    border: 10px solid white !important;    
     margin-top: 150px;
-    width: 100vw;
-    height: 60vw;
+}
+
+.heading1 {
+    font-size: 50px;
+    color: white;
+    text-align: centre;
+    margin-left: 60px;
+    margin-right: auto;
+    /* margin-top: 60px; */
+    margin-bottom: 60px;
+    font-weight: bold;
+    margin-top: 150px;
 }
 
 
@@ -369,48 +375,34 @@ body {
         flex-direction: column;
     }
 }
-.cards{
-    /* border: 2px solid black; */
+
+
+.books{
     display: flex;
     margin: auto;
     justify-content: center;
 }
 
-/* body{
-    background-color: rgb(164, 18, 201) !important;
-} */
-.card{
-    width: 1300px;
+.book{
     height: 400px;
-    /* border: 2px solid rgba(0, 0, 0, 0); */
-    /* padding: 10px; */
-    
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 150px;
-
-    border-radius: 15px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 50px;
+    border-radius: 10px;
     /* background-color: #00000085;
          */
-         background: linear-gradient(130deg,rgba(255, 255, 255, 0.1),rgba(141, 77, 93, 0.267)); 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 20px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+         /* background: linear-gradient(130deg,rgba(255, 255, 255, 0.1),rgba(231, 141, 231, 0.267));  */
+         /* backdrop-filter: blur(10px); */
+         /* -webkit-backdrop-filter: blur(5px); */
+         border-radius: 20px;
+         box-shadow: rgba(164, 47, 231, 0.56) 0px 22px 70px 4px;
+         background: url(../Components/Assets/mountains.jpg);
+         background-size: cover;
 
 }
-/* .card:hover{
-
-    
-    transform: scale(1.05);
-    cursor: pointer;
-    backdrop-filter: blur(0px);
-    background: linear-gradient(10deg,rgba(255, 255, 255, 0.1),rgba(231, 151, 165, 0.252)); 
-    box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
-} */
-.card h3 {
-    color: #000;
-    font-size: 28px;
-    
+.book:hover{
+    /* transform: translateY(-30px); */
+    transform: scale(1.15);
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+    box-shadow: rgba(186, 107, 231, 0.56) 0px 22px 70px 4px;
 }
