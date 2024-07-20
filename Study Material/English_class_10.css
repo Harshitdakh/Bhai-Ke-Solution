@@ -641,7 +641,7 @@ width: 70%;
     border-radius: 99px;
     position: fixed;
     bottom: 10px;
-    background-color: ;
+    /* background-color: ; */
     right: 26px;
     background: url(../Components/Assets/up_arrow.svg);
     filter: invert() brightness(0.5);
