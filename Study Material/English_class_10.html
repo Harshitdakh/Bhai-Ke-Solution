@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENGLISH | Class XI</title>
+    <title>ENGLISH | Class X</title>
     <link rel="stylesheet" href="English_class_10.css">
     <script src="../Components/Mouse_trail.js"></script>
+    <link rel="stylesheet" href="../loginbtn_logincard.css">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -29,10 +31,11 @@
 
         </div>
     </a>
-    <header>
+
+    <header class="scrollt">
         <nav>
             <div class="logo">
-                <a href="index.html">
+                <a href="../index.html">
 
                     <img src="../Components/Assets/img/logo nobg.png" alt="Bhai Ke Solutions Logo">
                 </a>
@@ -41,17 +44,20 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../Study material.html">Study Material</a></li>
                 <li><a href="../About.html">About</a></li>
-                <li><a href="../Contact.html">Contact</a></li>
+                <li><a href="../Blog.html">Blog</a></li>
             </ul>
             <ul class="right">
-                <li><a href="../login.html" class="login">Login</a></li>
-                <li><a href="../sign in.html" class="signup">Sign up</a></li>
+                <a href="" style="display: none;" id="logout" class="login">Logout</a>
+                <a href="../index_login.html" id="login" class="login">Login</a> 
+                
+                <!-- <li><a href="login.html" class="login">Login</a></li>
+                <li><a href="sign in.html" class="signup">Sign up</a></li> -->
             </ul>
         </nav>
     </header>
-
+    <script type="module" src="../homepage.js"></script>
     <body>
-        <div class="heading" id="top">THIS IS THE ENGLISH PAGE FOR Class IX ...</div>
+        <div class="heading" id="top">THIS IS THE ENGLISH PAGE FOR Class X ...</div>
 
         <div class="books">
             <a href="#book1">
