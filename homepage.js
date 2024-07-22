@@ -43,7 +43,9 @@ onAuthStateChanged(auth, (user) => {
     if (loggedInUserId) {
         console.log(user);
         document.getElementById('logout').style.display = "block";
+        document.getElementById('logout1').style.display = "block";
         document.getElementById('login').style.display = "none";
+        document.getElementById('login1').style.display = "none";
         const docRef = doc(db, "users", loggedInUserId);
         getDoc(docRef)
             .then((docSnap) => {
@@ -75,6 +77,12 @@ document.getElementById("logout").addEventListener("click", function () {
     document.getElementById("login").style.display = "block";
     document.getElementById("logout").style.display = "none";
 });
+document.getElementById("logout1").addEventListener("click", function () {
+    // Implement your logic to log out the user
+    // Example: localStorage.removeItem("loggedInUser");
+    document.getElementById("login1").style.display = "block";
+    document.getElementById("logout1").style.display = "none";
+});
 // document.getElementById("login").addEventListener("click", function () {
 //     // Implement your logic to log out the user
 //     // Example: localStorage.removeItem("loggedInUser");
@@ -97,6 +105,21 @@ logoutButton.addEventListener('click', () => {
         })
     document.getElementById("login").style.display = "block";
     document.getElementById("logout").style.display = "none";
+})
+document.getElementById('logout1').addEventListener('click', () => {
+    localStorage.removeItem('loggedInUserId');
+    document.getElementById('loggedUserFName').innerText = "";
+    document.getElementById('loggedUserEmail').innerText = "";
+    document.getElementById('loggedUserLName').innerText = "";
+    signOut(auth)
+        .then(() => {
+            window.location.href = 'index_login.html';
+        })
+        .catch((error) => {
+            console.error('Error Signing out:', error);
+        })
+    document.getElementById("login1").style.display = "block";
+    document.getElementById("logout1").style.display = "none";
 })
 
 

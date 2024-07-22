@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const gradeIXRadio = document.getElementById('radio-1');
     const gradeXRadio = document.getElementById('radio-2');
 
-    gradeIXCards.forEach(card => card.style.display = 'block');
+    gradeIXCards.forEach(card => card.style.display = 'flex');
     gradeXCards.forEach(card => card.style.display = 'none');
 
     gradeIXRadio.addEventListener('change', function() {
         if (this.checked) {
-            gradeIXCards.forEach(card => card.style.display = 'block');
+            gradeIXCards.forEach(card => card.style.display = 'flex');
             gradeXCards.forEach(card => card.style.display = 'none');
         }
     });
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     gradeXRadio.addEventListener('change', function() {
         if (this.checked) {
             gradeIXCards.forEach(card => card.style.display = 'none');
-            gradeXCards.forEach(card => card.style.display = 'block');
+            gradeXCards.forEach(card => card.style.display = 'flex');
         }
     });
 });

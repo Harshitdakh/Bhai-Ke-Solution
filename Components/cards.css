@@ -1,31 +1,104 @@
-.cards{
+.cards {
+    width: 100%;
     /* border: 2px solid black; */
     display: flex;
-    margin: auto;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    /* border: 3px solid white; */
+    
+}
+.cards1 {
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 3px solid white; */
+    
 }
 
 /* body{
     background-color: rgb(164, 18, 201) !important;
-} */
-.card{
+    } */
+    /* .cards a {
+        flex-grow: 1;
+        } */
+        
+        .card {
+            display: flex;
+            
+            /* flex-grow: 1; */
+            align-items: center;
+            justify-content: center;
+
     width: 276px;
     height: 350px;
     border: 2px solid rgba(0, 0, 0, 0);
     /* padding: 10px; */
-    
+
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 150px;
+    margin-top: 20px;
 
     border-radius: 10px;
     /* background-color: #00000085;
          */
-         background: linear-gradient(130deg,rgba(255, 255, 255, 0.1),rgba(231, 141, 231, 0.267)); 
+    background: linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(231, 141, 231, 0.267));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
+}
+
+.card:hover {
+
+    /* background-color: transparent; */
+    transform: scale(1.05);
+    cursor: pointer;
+    backdrop-filter: blur(0px);
+    background: linear-gradient(10deg, rgba(255, 255, 255, 0.1), rgba(231, 141, 231, 0.267));
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+
+}
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+    .card {
+    width: 40vw;
+    height: 26vw;
+
+
+   }
+   
+
+   .cards {
+    height: auto ;
+    margin: 40px auto 0 auto;
+    display: grid;
+    justify-content: center;
+    max-width:90vw;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 5px;
+   }
+
+   .cards1 {
+    height: auto ;
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
+    max-width:90vw;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 5px;
+   }
+    
 }

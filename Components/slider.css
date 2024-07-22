@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
     
 }
 
@@ -81,10 +82,19 @@ input[id="radio-2"]:checked ~ .glider {
 }
 .tab:hover{
     background-color: transparent ;
+    transform: scale(1.25);
 }
 
 @media (max-width: 768px) {
     .tabs {
-        transform: scale(0.6);
+        /* transform: scale(0.6); */
+        width: 80vw;
+    }
+    .tab {
+        /* transform: scale(0.6); */
+        width: 80vw;
+    }
+    .glider{
+        width: 40vw;
     }
 }
