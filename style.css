@@ -6,9 +6,19 @@ html{
     overflow-x: hidden;
 
 }
+body::-webkit-scrollbar {
+    background-color: #ffffff00;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: hsl(271, 83%, 72%);
+    border-radius: 99px;
+  }
+  
 body {
-    width: 99vw;
-    margin: 0;
+    width: 89vw;
+    margin: auto;
+    
 
     background-color: #0F051B;
     color: #fff;
@@ -24,6 +34,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 10;
 }
 
@@ -166,7 +177,7 @@ nav ul li a.signup {
 }
 
 .video {
-    width: 80vw;
+    width: 100vw;
     height: 86vh;
     border: 10px solid black;
     overflow: hidden;
@@ -175,10 +186,12 @@ nav ul li a.signup {
 /* Container styles */
 .vid_container {
     position: relative;
-    width: 100%;
+    width: 80vw;
+    margin: auto;
     height: 500px;
     overflow: hidden;
     aspect-ratio: 2.4;
+    box-shadow: rgba(99, 54, 223, 0.747) 0px 2px 4px;
 }
 
 
@@ -239,8 +252,8 @@ nav-mobile {
     height: 60px;
     background-color: transparent ;
     /* display: flex; */
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+     align-items: flex-start;
 
 }
 
@@ -286,9 +299,22 @@ nav-mobile .svg {
 }
 
 @media (max-width:768px) {
+    
     .body{
-        width: 100%;
+        /* display: none;
+         */
+         width: 89vw;
+        position: fixed;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 100vw; 
+        /* overflow: hidden; */
+        right: 100px;
     }
+    .header{
+        display: none;
+    }
+
     .hero{
         height: 50vh;
     }
@@ -300,7 +326,7 @@ nav-mobile .svg {
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 300px;
+        width: 100%; 
 
         /* backdrop-filter: blur(1000px);
         background-color: rgba(201, 130, 130, 0.568) ; */
@@ -360,7 +386,7 @@ backdrop-filter: blur(10.6px);
     nav-mobile a1{
         box-sizing: border-box;
         height: 100%;
-        width: 100%;
+        width: 100vw;
         padding: 20px 30px;
         justify-content: flex-start;
     }
@@ -392,6 +418,6 @@ backdrop-filter: blur(10.6px);
     }
 .chota_menu{
     position: absolute;
-    right: 0;
+    right: 0px; 
 }
 }
