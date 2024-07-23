@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #0f051b00;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+/* Add this to your existing CSS */
+
+/* Add this to your existing CSS */
+
+nav {
+    background-color: #fcf3f300;
+    /* Transparent black background */
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    -webkit-backdrop-filter: blur(5px);
+    /* Apply blur effect for Safari */
+}
+
+
+nav {
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0px ;
+    padding: 0 20px;
+}
+
+.logo img {
+
+    margin-right: auto;
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul.left {
+    margin: auto;
+    position: relative;
+    display: flex;
+    /* flex-grow: 1; */
+    /* margin-left: 20px; Added gap between logo and navigation items */
+}
+
+nav ul.right {
+    display: flex;
+}
+
+nav ul.left li,
+nav ul.right li {
+    margin-left: 40px;
+    /* Increase gap between Home, Study Material, About, and Contact */
+}
+
+nav ul.right li.signup {
+    margin-left: 20px;
+    /* Further increase gap between Login and Sign up */
+}
+
+nav ul li:first-child {
+    /* margin-left: ; */
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px;
+}
+
+nav ul li a.login,
+nav ul li a.signup {
+    color: #ff4dff;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul.left,
+    nav ul.right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul.left li,
+    nav ul.right li {
+        margin-left: 30;
+    }
+}
+
+html {
+    /* font-size: 12pt; */
+    font-family: poppins, segoe UI, Tahoma, sans-serif;
+}
+
+nav-mobile {
+    display: none;
+    height: 60px;
+    background-color: transparent ;
+    /* display: flex; */
+    justify-content: flex-start;
+     align-items: flex-start;
+
+}
+
+.link-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+nav-mobile a {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+nav-mobile a:hover {
+    background-color: rgb(90, 37, 160);
+    border-radius: 12px;
+}
+
+nav-mobile .home-link {
+    margin-right: auto;
+}
+
+nav-mobile .svg {
+    fill: white;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+    display: none;
+    display: none;
+}
+
+@media (max-width:768px) {
+    
+    
+    .header{
+        display: none;
+    }
+
+    .hero{
+        height: 50vh;
+        width: 100vw;
+    }
+    .link-container{
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 100%; 
+
+        /* backdrop-filter: blur(1000px);
+        background-color: rgba(201, 130, 130, 0.568) ; */
+
+        
+    /* background-image: linear-gradient(319deg, #201e1e 0%, #471d24 37%, #201e1e 100%); */
+        /* background: linear-gradient(10deg, rgb(22, 1, 1), rgb(43, 1, 43));
+         */
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+/* From https://css.glass */
+
+background: rgb(0, 0, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+
+        transition: 0.65s ease-out;
+    }
+  
+   
+
+    .nav-desktop{
+        display: none;
+    }
+    nav-mobile {
+        display: flex ;
+        visibility: visible;
+        justify-content: space-between;
+        backdrop-filter: blur(100px);
+    }
+
+    nav-mobile a {
+        font-size: 20px;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: center;
+        /* backdrop-filter: blur(100px); */
+        /* background: linear-gradient(10deg, rgb(22, 1, 1), rgb(43, 1, 43)); */
+
+        border-radius: 33px;
+        margin: 1px;
+        
+background: rgba(0, 0, 0, 0.575);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+
+
+    }
+    nav-mobile a:first-child{
+        padding-top: 0;
+    }
+    nav-mobile a1{
+        box-sizing: border-box;
+        height: 100%;
+        width: 100vw;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    
+    .open-sidebar-button,
+    .close-sidebar-button {
+        padding: 20px;
+        display: block;
+        justify-self: flex-end;
+    }
+    .close-sidebar-button{
+        padding-bottom: 0;
+    }
+    #sidebar-active:checked~.link-container {
+        right: 0;
+
+       
+    }
+    
+    #sidebar-active:checked~#overlay {
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+
+    }
+.chota_menu{
+    position: absolute;
+    right: 0px; 
+}
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 150px 0;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/free-photo/interior-old-room-with-spotlight_1048-13648.jpg') no-repeat center center/cover;
+    filter: brightness(0.4); /* Adjust the blur level as needed */
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.about {
+    padding: 30px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* <img src="https://img.freepik.com/premium-photo/empty-black-color-studio-room-background-product-display_198067-49574.jpg" jsaction="" class="sFlh5c pT0Scc iPVvYb" style="max-width: 626px; height: 198px; margin: 0px; width: 297px;" alt="Premium Photo | Abstract luxury blur dark grey and black gradient used as  background studio wall for display your pr" jsname="kn3ccd" aria-hidden="false"> */
+/* .container1 {
+    background-image: url(https://img.freepik.com/free-photo/interior-old-room-with-spotlight_1048-13648.jpg);
+    width: 100%;
+    height: 700px;
+    max-width: 480px;
+} 
+
+/* .container1 img{
+    width: 1000px;
+    height: 500px;
+} */
+
+.about-image img {
+    width: 100%;
+    max-width: 100vw;
+    margin: auto;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.skills {
+    background-color: #1c1c1c;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+.skills p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.skill {
+    width: 30%;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #f02828;
+}
+
+.skills-stats {
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 20px; */
+}
+
+.stat {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.stat h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    /* margin-right: 20px; */
+}
+
+.stat p {
+    font-size: 14px;
+    /* margin-right: 20px; */
+}
+
+.cta {
+    background: url('https://img.freepik.com/free-photo/interior-old-room-with-spotlight_1048-13648.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 180px 0;
+}
+
+.cta h2 {
+    font-size: 56px;
+    margin-bottom: 80px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #28d9f0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 55px;
+
+
+}
+

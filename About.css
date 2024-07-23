@@ -5,7 +5,7 @@
 body {
     margin: 0;
 
-    background-color: #0F051B;
+    background-color: #000000;
     color: #fff;
     text-align: center;
 
@@ -117,6 +117,21 @@ nav ul li a.signup {
     position: relative;
     /* backdrop-filter: blur(400px) */
 }
+.hero1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* background: #0F051B; */
+    /* color: #fff; */
+    padding: 0 20px;
+    margin-top: 0px;
+    z-index: -1;
+    position: relative;
+    background-image: url(Components/Assets/mountains.jpg);
+    /* backdrop-filter: blur(400px) */
+}
 
 .hero h1 {
     font-weight: 700;
@@ -152,6 +167,10 @@ nav ul li a.signup {
         margin-left: 30;
     }
 
+    .hero1{
+        height: 50vh;
+        width: 100vw;
+    }
     .hero h1 {
         font-size: 3em;
     }
@@ -430,7 +449,136 @@ body {
     box-shadow: rgb(38, 57, 77) 0px 10px 30px -10px;
 } */
 .card h3 {
-    color: #000;
+    color: #ffffff;
     font-size: 28px;
     
 }
+.about {
+    padding: 30px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* <img src="https://img.freepik.com/premium-photo/empty-black-color-studio-room-background-product-display_198067-49574.jpg" jsaction="" class="sFlh5c pT0Scc iPVvYb" style="max-width: 626px; height: 198px; margin: 0px; width: 297px;" alt="Premium Photo | Abstract luxury blur dark grey and black gradient used as  background studio wall for display your pr" jsname="kn3ccd" aria-hidden="false"> */
+/* .container1 {
+    background-image: url(https://img.freepik.com/free-photo/interior-old-room-with-spotlight_1048-13648.jpg);
+    width: 100%;
+    height: 700px;
+    max-width: 480px;
+} 
+
+/* .container1 img{
+    width: 1000px;
+    height: 500px;
+} */
+
+.about-image img {
+    width: 100%;
+    max-width: 100vw;
+    margin: auto;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.skills {
+    background-color: #1c1c1c;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+.skills p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.skill {
+    width: 30%;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #f02828;
+}
+
+.skills-stats {
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 20px; */
+}
+
+.stat {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.stat h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    /* margin-right: 20px; */
+}
+
+.stat p {
+    font-size: 14px;
+    /* margin-right: 20px; */
+}
+
+.cta {
+    background: url('https://img.freepik.com/free-photo/interior-old-room-with-spotlight_1048-13648.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 180px 0;
+}
+
+.cta h2 {
+    font-size: 56px;
+    margin-bottom: 80px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #28d9f0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 55px;
+
+
+}
+
