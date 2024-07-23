@@ -1,0 +1,47 @@
+.header_1 {
+    
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    margin: auto;
+  }
+  iframe{
+    margin-top: 100px;
+  }
+  .nav_1{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav_1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f9fa;
+  }
+  
+  .nav_1 ul li {
+    float: left;
+  }
+  
+  .nav_1 ul li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav_1 ul li a:hover {
+    background-color: #ddd;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav_1 ul li {
+      float: none;
+    }
+  }
+  
