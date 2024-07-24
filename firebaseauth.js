@@ -45,7 +45,8 @@ const firebaseConfig = {
         const userData={
             email: email,
             firstName: firstName,
-            lastName:lastName
+            lastName:lastName,
+            password:password
         };
         showMessage('Account Created Successfully', 'signUpMessage');
         const docRef=doc(db, "users", user.uid);

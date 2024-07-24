@@ -1,48 +1,131 @@
-.header_1 {
-    
-    background-color: #f8f9fa;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    justify-content: center;
-    margin: auto;
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+body{
+  min-height: 100vh;
+  /* background: url('../Components/Assets/mountains.jpg');
+   */
+   background: #0F051B;
+   
+   background-size: cover;
+   background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+iframe{
+  display: flex;
+  justify-content: center;
+  
+  width: 70vw;
+  margin: 30px auto 0 auto;
+  box-shadow: rgba(124, 8, 219, 0.801) 0px 0px 100px;
+  
+}
+nav{
+  background: #0F051B;
+  /* background-color: white; */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  font-size: 15px;
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(163, 93, 255);
+  font-size: 20px;
+}
+nav a:hover{
+  border-radius: 33px;
+  background-color: #3a38c493;
+}
+nav li:first-child{
+  margin-right: auto;
+  
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  border-radius: 33px;
+  display: none;
+  background-color: white;
+}
+
+
+.title{
+  color: white;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  margin: auto;
+  font-size: 30px;
+  font-weight: bold;
+  /* border-radius: 10px; */
+ /* From https://css.glass */
+/* background: rgba(56, 12, 158, 0.37); */
+background: #3735ae88;
+border-radius: 99px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.2px);
+-webkit-backdrop-filter: blur(9.2px);
+border: 1px solid rgba(255, 255, 255, 0.13);
+width: 300px;
+height: 50px;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
   }
   iframe{
-    margin-top: 100px;
+    margin-top: 30px;
+    
+    width: 90vw;
   }
-  .nav_1{
-    display: flex;
-    justify-content: center;
+}
+/* @media(max-width: 400px){
+  .sidebar{
+    width: 100%;
   }
-  
-  .nav_1 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f8f9fa;
-  }
-  
-  .nav_1 ul li {
-    float: left;
-  }
-  
-  .nav_1 ul li a {
-    display: block;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .nav_1 ul li a:hover {
-    background-color: #ddd;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .nav_1 ul li {
-      float: none;
-    }
-  }
-  
+} */
+.logo{
+  color: white ;
+}
