@@ -19,29 +19,32 @@
   </style>
 </head>
 <body>
+  <div class="bg">
+
+  </div>
     <div class="signin_container" id="signup" style="display:none;">
-      <h1 class="form-title">Register</h1>
+      <h1 class="form-title">Create A New Account</h1>
       <form method="post" action="">
         <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
         <div class="input-group">
-           <i class="fas fa-user"></i>
+           <!-- <i class="fas fa-user"></i> -->
+           <!-- <label for="fname">First Name</label> -->
            <input type="text"  id="fName" placeholder="First Name" required>
-           <label for="fname">First Name</label>
         </div>
         <div class="input-group">
-            <i class="fas fa-user"></i>
+            <!-- <i class="fas fa-user"></i> -->
             <input type="text"  id="lName" placeholder="Last Name" required>
-            <label for="lName">Last Name</label>
+            <!-- <label for="lName">Last Name</label> -->
         </div>
         <div class="input-group">
-            <i class="fas fa-envelope"></i>
+            <!-- <i class="fas fa-envelope"></i> -->
             <input type="email"  id="rEmail" placeholder="Email" required>
-            <label for="rEmail">Email</label>
+            <!-- <label for="rEmail">Email</label> -->
         </div>
         <div class="input-group">
-            <i class="fas fa-lock"></i>
+            <!-- <i class="fas fa-lock"></i> -->
             <input type="password" id="rPassword"  placeholder="Password" required>
-            <label for="rPassword">Password</label>
+            <!-- <label for="rPassword">Password</label> -->
         </div>
        <button class="btn" id="submitSignUp" >Sign Up</button>
       </form>
@@ -54,13 +57,13 @@
       </div>
       <div class="links">
         <p>Already Have Account ?</p>
-        <button id="signInButton">Sign In</button>
+        <button id="signInButton">Log In</button>
       </div>
     </div>
 
   <div class="signin_container" id="signIn">
-    <h1 class="form-welcome">Welcome</h1>
-        <h1 class="form-title">Sign In</h1>
+    <h1 class="form-welcome">Welcome Back !!</h1>
+        <h1 class="form-title">Log In</h1>
         <form method="post" action="">
           <div id="signInMessage" class="messageDiv" style="display:none;"></div>
 
@@ -77,7 +80,7 @@
           <p class="recover">
             <a href="#">Recover Password</a>
           </p>
-         <button  class="btn"  id="submitSignIn">Sign In</button>
+         <button  class="btn"  id="submitSignIn">Log In</button>
         </form>
         <p class="or">
           ----------or--------
@@ -88,7 +91,7 @@
         </div>
         <div class="links">
           <p>Don't have account yet?</p>
-          <button id="signUpButton">Sign Up</button>
+          <button id="signUpButton">Create  Account</button>
         </div>
       </div>
       <script src="script.js"></script>
