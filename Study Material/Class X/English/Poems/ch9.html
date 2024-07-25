@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="../../../header.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: "poppins";
+            
+        }
+        .example::-webkit-scrollbar {
+    
+  display: none;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar() > <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="../../../../index.html">Home</a></li>
+          <li><a href="../../../../Study material.html">Study Material</a></li>
+          <li><a href="#NS">Ncert Solution</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <!-- <li><a href="#charactersketch">Character Sketch</a></li> -->
+          <li><a href="#poeticdevices">Poetic device</a></li>
+          
+        </ul>
+        <ul>
+          <li><a href="../../../index.html">Bhai ke Solution</a></li>
+          <li class="hideOnMobile logo"><a href="../../../../index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="../../../../Study material.html">Study Material</a></li>
+          <li class="hideOnMobile"><a href="#NS">Ncert Solution</a></li>
+          <li class="hideOnMobile"><a href="#summary">Summary</a></li>
+          <!-- <li class="hideOnMobile"><a href="#charactersketch">Character Sketch</a></li> -->
+          <li class="hideOnMobile"><a href="#poeticdevices">Poetic devices</a></li>
+          <!-- <li class="hideOnMobile"><a href="#">Login</a></li> -->
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+        function handleLinkClick(event) {
+            event.preventDefault();
+            const targetId = event.target.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            // Save the current scroll position
+            const scrollPosition = window.pageYOffset;
+
+            // Navigate to the target element
+            window.location.hash = targetId;
+
+            // Restore the scroll position after navigation
+            window.scrollTo(0, scrollPosition);
+        }
+
+        // Attach the event listener to the sidebar links
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebarLinks = document.querySelectorAll('.sidebar a');
+            sidebarLinks.forEach(function(link) {
+                link.addEventListener('click', handleLinkClick);
+            });
+        });
+      </script>
+
+    <div id="NS" style="height: 50px; margin-top:30px"></div>
+    <div class="title" style="height: 50px;">
+        Ncert Solution 
+    </div>
+    <iframe loading="lazy" style="position: relative;  height: 70vh;  border: none; border-radius: 8px; padding: 0; "
+    src="https://www.canva.com/design/DAGL7pfrqZU/umvuVRsrnURbOe1DFYKaxQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen" >
+  </iframe>
+
+    <div id="summary" style="height: 50px;"></div>
+    <div class="title" style="height: 50px;">
+        Summary
+    </div>
+    <iframe loading="lazy" style="position: relative; height: 70vh;  border: none; border-radius: 8px; padding: 0; overflow: hidden; justify-content: center; display: flex;"
+    src="https://www.canva.com/design/DAGL7hWTYZ4/qb1E82SHzIszCsZcaj6vvg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+</iframe>
+    <!-- <div id="charactersketch" style="height: 50px;"></div>
+    <div class="title" style="height: 50px;">
+        Character Sketch
+    </div>
+    <iframe loading="lazy" style="position: relative; height: 70vh;  border: none; border-radius: 8px; padding: 0; overflow: hidden; justify-content: center; display: flex;"
+    src="https://www.canva.com/design/DAGL3tQxFNY/8Jxa4gmc49HEc4rVKul42A/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+</iframe> -->
+    <div id="poeticdevices" style="height: 50px;"></div>
+    <div class="title" style="height: 50px;">
+        
+        Poetic Devices
+    </div>
+    <iframe loading="lazy" style="position: relative; height: 70vh;  border: none; border-radius: 8px; padding: 0; overflow: hidden; justify-content: center; display: flex;"
+    src="https://www.canva.com/design/DAGL7l4agvE/p5KUnsV4b68tSEge058PfQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+</iframe>
+<footer class="title" style="margin-top: 30px;" >
+
+    The END
+</footer>
+
+</body>
+</html>
