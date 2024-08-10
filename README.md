@@ -2,9 +2,11 @@
  
 # Images
 ## Home Page
-![This is an alt text.](/Components/Assets/img/Screenshot/Screenshot 2024-08-10 203230.png "This is a Home image.")
+![This is an alt text.](https://github.com/HEADYKAGE/Bhai-Ke-Solution/blob/a2594af26572f40ea364bd9068aa3f06e5095592/Components/Assets/img/Screenshot/Screenshot%202024-08-10%20203230.png)
 ## Login Page
-![This is an alt text.](/Components/Assets/img/Screenshot/Screenshot 2024-08-10 203240.png "This is a Login page image.")
+![This is an alt text.](https://github.com/HEADYKAGE/Bhai-Ke-Solution/blob/a2594af26572f40ea364bd9068aa3f06e5095592/Components/Assets/img/Screenshot/Screenshot%202024-08-10%20203240.png)
+
+
 
 ## Links
 
